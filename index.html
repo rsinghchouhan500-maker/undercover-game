@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#10121d" />
+    <meta name="description" content="A quick social deduction game for friends. Create a room and find the undercover player." />
+    <title>Undercover — Find the odd one out</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <header class="topbar"><a class="brand" href="#" aria-label="Undercover home"><span class="brand-mark">U</span><span>undercover</span></a><button class="text-button" id="rules-open">How to play <span aria-hidden="true">↗</span></button></header>
+    <main id="app" class="app-shell"><div class="loading-card"><span class="spinner"></span><span>Preparing your table…</span></div></main>
+    <dialog id="rules-dialog" class="rules-dialog"><button class="dialog-close" aria-label="Close">×</button><p class="eyebrow">THE RULES</p><h2>One word. One imposter.</h2><ol><li>Everyone gets the same secret word, except the undercover player.</li><li>Take turns giving a one-word clue. Say enough to prove you know it, but not so much that you give it away.</li><li>Discuss, then vote for the player you think is undercover. A tied vote gets one revote.</li><li>The group wins by finding the undercover. The undercover wins when only one other player remains.</li></ol><p class="rules-note">Best with 4–10 people. Keep your screen to yourself.</p></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
